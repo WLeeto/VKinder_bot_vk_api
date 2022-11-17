@@ -4,7 +4,7 @@ from ORM.models import *
 
 class ORM:
     def __init__(self):
-        self.DSN = "postgresql://postgres:6950dc6c7@localhost:5432/vk_bot"
+        self.DSN = "postgresql://postgres:your_password_posgtresql@localhost:5432/vk_bot2"
         self.engine = sq.create_engine(self.DSN)
 
         Session = sessionmaker(bind=self.engine)
@@ -134,12 +134,5 @@ if __name__ == "__main__":
     # db.add_black_list(2, 8)
 
     #  Выборки
-<<<<<<< HEAD
-    print(db.find_all_likes(2))
-    print(db.find_all_bl(1))
-
-    print(db.all_users())
-=======
     # print(db.find_all_likes(2))
     # print(db.find_all_bl(1))
->>>>>>> 886abbe07c169d98cf5cabaa4f223dcffa11b221
